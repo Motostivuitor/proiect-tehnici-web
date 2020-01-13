@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maynooth</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" sizes="64x64">
+</head>
+
+<body>
+
+<header class="siteHeader">
+    <div class="content flex">
+        <a class="logo" href="index.html">
+            <img src="img/logo.png">
+        </a>
+
+    
+        <nav class="site-nav">
+            <ul>
+                <li class="with-dropdown"><a href="index.html">Home</a>
+                    <ul class="dropdown">
+                        <li><a href="sofas.html">Sofas</a></li>
+                        <li><a href="chairs.html">Chairs</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+                
+    </div>   
+</header>
+
+<main class="main-content content">
+        <table>
+            <tr>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>+40 123 456 789</td>
+                <td>maynooth_uk@yahoo.com</td>
+                <td>Unibuc Bucuresti</td>
+            </tr>
+
+            </table>
+
+            <audio controls>
+            <source src="audio/travis.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <form>
+                <label>
+                    <span>Your name</span>
+                    <input type="text" placeholder="John" required>
+                </label>
+                <label>
+                    <span>Your e-mail</span>
+                    <input type="email" placeholder="john@doe.com" required>
+                </label>
+
+                <label>
+                    <span>Passwrod</span>
+                    <input type="password" id="pass" name="password" placeholder="Password"
+                    minlength="8" required>
+                </label>
+
+                <div id="message">
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+
+                <label>
+                    <span>Occupation</span>
+                    <select>
+                        <option value="designer">Designer</option>
+                        <option value="developer">Developer</option>
+                        <option value="student">Student</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Over 18 years</span>
+                    <input type="checkbox" name="years" value="ageover" checked>
+                </label>
+
+                <label>
+                    <span>Gender</span>
+                    <input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                </label>
+
+                <label>
+                    <span>Level</span>
+                    <input type="range" id="start" name="volume"
+                    min="0" max="11">
+                </label>
+
+                <textarea rows="5" placeholder="Your message"></textarea>
+
+                <input type="submit" class="submit" value="Send message" >
+                
+        </form>
+</main>
+
+
+<footer class="siteFooter">
+    <div class="content flex">
+        <div class="copyright" id="copyright">
+            <p>Copyright</p>
+        </div>
+        
+        <div class="social-links">
+            <ul>
+                <li><a href="facebook.com"><img src="img/facebook.png"></a></li>
+                <li><a href="twitter.com"><img src="img/twitter.png"></a></li>
+                <li><a href="instagram.com"><img src="img/instagram.png"></a></li>
+            </ul>
+        </div>
+   </div>
+</footer>
+                       
+
+
+<script src="js/about.js"></script>
+
+</body>
+
+
+</html>

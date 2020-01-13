@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* General Styles */
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Big Shoulders Text', cursive, sans-serif; 
+  background-image:url('../img/bg.jpg');
+  background-size:cover;
+  background-position: 50% -30%;
+  color:#1ebce8;
+}
+
+.logo {
+  margin-left:-115px;
+  margin-top:-20px;
+}
+.parent-flex{
+  display:flex;
+  justify-content: space-between;
+}
+img { 
+  max-width: 100%; 
+}
+.third h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size:1.6rem;
+}
+.third h3 {
+  text-align: center;
+  margin-top:0px;
+  color:#1ebce8;
+}
+.half {
+  flex: 0 0 50%;
+  overflow: hidden;
+}
+.margin-top {
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+.third {
+  flex:0 0 33%;
+}
+.padding-left {
+  padding-left:25px;
+}
+.clear {
+  clear: both;
+}
+
+a {
+  color: #1ebce8;
+  -webkit-transition: .2s all ease-in-out;
+  -moz-transition: .2s all ease-in-out;
+  -ms-transition: .2s all ease-in-out;
+  -o-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+  text-decoration: none; 
+ }
+ 
+ a:hover {
+     color:#1ebce8;
+ }
+ .content {
+     max-width:800px;
+     margin-left:auto;
+     margin-right:auto;
+ }
+.flex {
+    display:flex;
+    justify-content: space-between;
+}
+.site-nav ul li {
+    display:inline-block;
+    margin-left:30px;
+}
+.site-nav ul {
+    list-style:none;
+}
+.site-nav ul li a {
+    font-size:20px;
+    color:#1ebce8;
+}
+.with-dropdown {
+  position: relative;
+}
+.site-nav ul li.with-dropdown:hover .dropdown{
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown {
+ padding-left:0!important;
+ position: absolute;
+ left:0;
+ opacity: 0;
+ -webkit-transition: .2s all ease-in-out;
+ -moz-transition: .2s all ease-in-out;
+ -ms-transition: .2s all ease-in-out;
+ -o-transition: .2s all ease-in-out;
+ transition: .2s all ease-in-out;
+ visibility: hidden;
+ top:20px;
+ padding-top:10px;
+}
+.dropdown li {
+ margin-left:0!important;
+ width:200%;
+}
+.siteHeader {
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.main-content {
+  background:rgba(235, 137, 52,0.6);
+  padding:50px;
+  border-radius:15px;
+  margin-top:200px;
+}
+siteHeader {
+  margin-top:40px;
+  margin-bottom:40px;
+}
+.social-links img {
+max-width:50px;
+}
+.social-links li {
+display:inline-block;
+margin-left:25px;
+}
+table {
+  text-align: left;
+  padding:10px;
+  border:1px solid yellow;
+}
+table td {
+  padding:10px;
+}
+table th {
+  padding:10px;
+  color:red;
+  font-weight:bold;
+}
+audio {
+  margin-top:20px;
+}
+
+#copyright {
+  text-decoration: underline;
+}
+@media screen and (max-width:768px) {
+.logo {
+  margin-left:50px;
+}
+.site-nav {
+  margin-right:50px;
+}
+.siteFooter {
+  padding-right:50px;
+  padding-left:50px;
+}
+.dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.parent-flex {
+  display:block;
+}
+.third {
+  display:block;
+  width:50%;
+  float:left;
+  padding-right:15px;
+  padding-left:15px;
+}
+}
+
+@media screen and (max-width:480px) {
+.third {
+  width:100%;
+}
+.site-nav {
+  margin-right:15px;
+}
+.logo {
+  max-width:60px;
+  margin-top:25px;
+}
+h2 {
+  font-size:1.3rem;
+}
+.social-links img {
+  max-width: 40px;
+}
+}
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+.mystyle {
+  color:green;
+}
